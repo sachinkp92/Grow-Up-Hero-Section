@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+:root {
+    --primary:#fbc257;
+    --primary-dark: #fccc73;
+    --dark-brown: #341413;
+    --gray-1: #798092;
+    --gray-2: #e6e6ed;
+    --white:#ffffff;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+}
+
+.navbar{
+    padding: 40px 0;
+
+}
+
+a.nav-link{
+    margin-right: 30px;
+    font-size: 16px;
+    color: var(--dark-brown);
+    font-weight: 500;
+}
+
+
+.btn {
+    border-radius: 6px;
+    padding: 12px 20px;
+    font-size: 18px;
+    font-weight: 400;
+
+} 
+
+.btn-primary {
+    background-color: var(--primary);
+    border: none;
+    
+}
+.btn-primary:focus{
+    background-color: var(--primary);
+}
+
+.btn.btn-primary:hover {
+    background-color: var(--primary-dark);
+}
+
+.btn.secondary {
+    color: var(--gray-1);
+    background-color: var(--gray-2);
+}
+
+.btn-secondary:focus{
+    background-color: var(--white);
+    color: var(--gray-1);
+}
+
+.btn-secondary:hover {
+    background-color: var(--white);
+    color: var(--gray-1);
+}
+
+.navbar-brand img {
+    padding-right: 16px;
+}
+
+.navbar-brand span {
+    font-size: 16px;
+    color: var(--primary);
+    font-weight: 400;
+
+}
+
+
+.text-label,
+.text-hero-bold,
+.text-hero-regular{
+    margin: 30px 0;
+}
+
+.text-label {
+    color: var(--primary);
+    font-size: 20px;
+    font-weight: 500;
+
+}
+
+.text-hero-bold {
+    color: var(--dark-brown);
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: 600;
+}
+
+.text-hero-regular {
+    color: var(--gray-1);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.testimonial{
+    padding: 24px 0;
+}
+
+@media (max-width:992px){
+    .navbar-nav{
+        text-align: center;
+    }
+    
+    section.hero img {
+        padding-top: 36px;
+    }
+    .text-label,
+    .text-hero-regular{
+    text-align: center;
+    }
+    .text-hero-bold{
+        font-size: 36px;
+        text-align: center;
+        line-height: 50px;
+    }
+    .cta{
+        text-align: center;
+    }
+    .btn-align{
+        display: block;
+    }
+}
